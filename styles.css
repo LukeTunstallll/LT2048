@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gameBoard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+  height: 560px;
+  width: 560px;
+  background-color: #bcbabe;
+  gap: 20px;
+}
+
+.cell0 {
+  height: 125px;
+  width: 125px;
+  background-color: #f1f1f2;
+}
+
+.cell2 {
+  height: 125px;
+  width: 125px;
+  background-color: red;
+}
+
+.cell4 {
+  height: 125px;
+  width: 125px;
+  background-color: green;
+}
+
+.cell8 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell16 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell32 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell64 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell128 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell256 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell512 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell1024 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+
+.cell2048 {
+  height: 125px;
+  width: 125px;
+  background-color: #bcbabe;
+}
+/*# sourceMappingURL=styles.css.map */
