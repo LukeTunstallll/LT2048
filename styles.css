@@ -1,8 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  background-color: #bcbabe;
+}
+
+main {
+  font-family: "Noto Sans JP";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.gamehead {
+  text-align: center;
+}
+
+.score {
+  text-align: center;
 }
 
 .gameBoard {
@@ -19,75 +50,95 @@
   gap: 20px;
 }
 
+.cell {
+  height: 125px;
+  width: 125px;
+  background-color: #f1f1f2;
+  font-size: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .cell0 {
   height: 125px;
   width: 125px;
+  color: #f1f1f2;
   background-color: #f1f1f2;
 }
 
 .cell2 {
   height: 125px;
   width: 125px;
-  background-color: red;
+  background-color: #e0e0e0;
 }
 
 .cell4 {
   height: 125px;
   width: 125px;
-  background-color: green;
+  background-color: #aaae8e;
 }
 
 .cell8 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #828e82;
 }
 
 .cell16 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #607b7d;
 }
 
 .cell32 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #3a606e;
 }
 
 .cell64 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #156064;
 }
 
 .cell128 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #00c49a;
+  font-size: 70px;
 }
 
 .cell256 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #79addc;
+  font-size: 70px;
 }
 
 .cell512 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #ffc09f;
+  font-size: 70px;
 }
 
 .cell1024 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #ffee93;
+  font-size: 50px;
 }
 
 .cell2048 {
   height: 125px;
   width: 125px;
-  background-color: #bcbabe;
+  background-color: #f06543;
+  font-size: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

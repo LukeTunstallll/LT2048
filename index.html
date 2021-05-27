@@ -8,18 +8,21 @@
     <title>2048 - Luke Tunstall</title>
   </head>
   <body>
-    <div class="header"></div>
-    <div class="gameHead">
-      <div class="score">
-        <div class="score__Head">Score</div>
-        <div class="score__Value">0</div>
+    <main>
+      <div class="header">Javascript 2048!</div>
+      <div class="gameHead">
+        <div class="score">
+          <div class="score__Head">Score</div>
+          <div class="score__Value" id="scoreValue">0</div>
+        </div>
       </div>
-
-      <div class="Instructions"></div>
-    </div>
-    <div id="result"></div>
-    <div class="gameBoard"></div>
-    <div class="gameFooter"></div>
+      <div class="gameBoard"></div>
+      <div class="Instructions">
+        Use the arrow keys to move the tiles around the board, combine them to
+        score points and reach the goal of 2048!
+      </div>
+      <div class="gameFooter"></div>
+    </main>
     <script src="/main.js"></script>
   </body>
 </html>

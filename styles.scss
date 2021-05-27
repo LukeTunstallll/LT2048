@@ -3,10 +3,37 @@ $color-gray: #bcbabe;
 $color-lightblue: #a1d6e2;
 $color-blue: #1995ad;
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+$primary-font: "Noto Sans JP", Serif;
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $color-gray;
+}
+
+main {
+  font-family: "Noto Sans JP";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.gamehead {
+  text-align: center;
+}
+
+.score {
+  text-align: center;
 }
 
 .gameBoard {
@@ -21,73 +48,90 @@ $color-blue: #1995ad;
   gap: 20px;
 }
 
+.cell {
+  height: 125px;
+  width: 125px;
+  background-color: $color-white;
+
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 .cell0 {
   height: 125px;
   width: 125px;
+  color: $color-white;
   background-color: $color-white;
 }
 
 .cell2 {
   height: 125px;
   width: 125px;
-  background-color: red;
+  background-color: #e0e0e0;
 }
 
 .cell4 {
   height: 125px;
   width: 125px;
-  background-color: green;
+  background-color: #aaae8e;
 }
 
 .cell8 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #828e82;
 }
 
 .cell16 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #607b7d;
 }
 
 .cell32 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #3a606e;
 }
 
 .cell64 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #156064;
 }
 
 .cell128 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #00c49a;
+  font-size: 70px;
 }
 
 .cell256 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #79addc;
+  font-size: 70px;
 }
 
 .cell512 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #ffc09f;
+  font-size: 70px;
 }
 .cell1024 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #ffee93;
+  font-size: 50px;
 }
 
 .cell2048 {
   height: 125px;
   width: 125px;
-  background-color: $color-gray;
+  background-color: #f06543;
+  font-size: 50px;
 }
