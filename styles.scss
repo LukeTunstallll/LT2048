@@ -22,18 +22,23 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .header {
   text-align: center;
-}
-
-.gamehead {
-  text-align: center;
+  font-size: 80px;
 }
 
 .score {
   text-align: center;
+  font-size: 40px;
+}
+
+.reset {
+  font-size: 30px;
+  background-color: #aaae8e;
+  border-radius: 10px;
 }
 
 .gameBoard {
