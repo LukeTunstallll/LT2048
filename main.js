@@ -180,6 +180,7 @@ resetButton.addEventListener("click", (event) => {
   initialise();
 });
 
+//Clears grid and generates new board
 const initialise = () => {
   gameGrid = [
     ["", "", "", ""],
