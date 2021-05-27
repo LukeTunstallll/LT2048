@@ -2,6 +2,7 @@ scoreDisp = document.querySelector("#scoreValue");
 resetButton = document.querySelector(".reset");
 let score = 0;
 
+//Creates fresh gameboard
 const gameGrid = [
   ["", "", "", ""],
   ["", "", "", ""],
@@ -9,6 +10,7 @@ const gameGrid = [
   ["", "", "", ""],
 ];
 
+//Checks if a tile contains 2048
 const checkWin = () => {
   for (let o = 0; o < 4; o++) {
     for (let i = 0; i < 4; i++) {
@@ -19,7 +21,7 @@ const checkWin = () => {
     }
   }
 };
-
+// Check if no more moves can be made
 // const checkLose = () => {
 //   let zeros = 0;
 //   for (let o = 0; o < 4; o++) {
@@ -35,6 +37,7 @@ const checkWin = () => {
 //   }
 // };
 
+//Creates the initial Divs in HTML
 const generate1stBoard = () => {
   let HTML = "";
 
@@ -46,6 +49,7 @@ const generate1stBoard = () => {
   document.querySelector(".gameBoard").innerHTML = HTML;
 };
 
+//Generates a new tile in an empty space
 const getRandomtiles = () => {
   let randomX = Math.floor(Math.random() * gameGrid.length);
   let randomY = Math.floor(Math.random() * gameGrid.length);
@@ -57,6 +61,7 @@ const getRandomtiles = () => {
   // checkLose();
 };
 
+//Translates the grid array into the divs
 const gridTranslate = () => {
   let HTML = "";
 
@@ -68,6 +73,7 @@ const gridTranslate = () => {
   document.querySelector(".gameBoard").innerHTML = HTML;
 };
 
+//Moves Tiles Right
 const moveRight = () => {
   for (let i = 0; i < 4; i++) {
     let filteredRow = gameGrid[i].filter((num) => num);
@@ -82,6 +88,7 @@ const moveRight = () => {
   }
 };
 
+//Moves Tiles Left
 const moveLeft = () => {
   for (let i = 0; i < 4; i++) {
     let filteredRow = gameGrid[i].filter((num) => num);
@@ -96,6 +103,7 @@ const moveLeft = () => {
   }
 };
 
+//Moves Tiles Down
 const moveDown = () => {
   for (let i = 0; i < 4; i++) {
     let totalOne = gameGrid[0][i];
@@ -116,6 +124,7 @@ const moveDown = () => {
   }
 };
 
+//Moves Tiles Up
 const moveUp = () => {
   for (let i = 0; i < 4; i++) {
     let totalOne = gameGrid[0][i];
@@ -136,6 +145,7 @@ const moveUp = () => {
   }
 };
 
+//Combines horizontal tiles
 const mergeCells = () => {
   for (let o = 0; o < 4; o++) {
     for (let i = 0; i < 4; i++) {
@@ -150,6 +160,7 @@ const mergeCells = () => {
   }
 };
 
+//Combines vertical tiles
 const mergeCellsVert = () => {
   for (let o = 0; o < 3; o++) {
     for (let i = 0; i < 4; i++) {
@@ -171,6 +182,7 @@ getRandomtiles();
 getRandomtiles();
 gridTranslate();
 
+//Assings arrow keys to controls
 const control = (event) => {
   if (event.keyCode === 39) {
     rightPress();
@@ -185,6 +197,7 @@ const control = (event) => {
 
 document.addEventListener("keyup", control);
 
+//Right arrow key functions
 const rightPress = () => {
   moveRight();
   mergeCells();
@@ -194,6 +207,7 @@ const rightPress = () => {
   checkWin();
 };
 
+//Left arrow key functions
 const leftPress = () => {
   moveLeft();
   mergeCells();
@@ -203,6 +217,7 @@ const leftPress = () => {
   checkWin();
 };
 
+//Down arrow key functions
 const downPress = () => {
   moveDown();
   mergeCellsVert();
@@ -212,6 +227,7 @@ const downPress = () => {
   checkWin();
 };
 
+//Up arrow key functions
 const upPress = () => {
   moveUp();
   mergeCellsVert();

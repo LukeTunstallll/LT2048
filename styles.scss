@@ -27,7 +27,9 @@ main {
 
 .header {
   text-align: center;
-  font-size: 80px;
+  font-size: 60px;
+  width: 560px;
+  margin: 30px;
 }
 
 .score {
@@ -39,6 +41,12 @@ main {
   font-size: 30px;
   background-color: #aaae8e;
   border-radius: 10px;
+}
+
+.gameFooter {
+  width: 560px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .gameBoard {
