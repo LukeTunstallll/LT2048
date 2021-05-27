@@ -31,7 +31,6 @@ main {
   text-align: center;
   font-size: 60px;
   width: 560px;
-  margin: 30px;
   color: #d0e1f9;
 }
 
@@ -64,7 +63,7 @@ main {
 .gameFooter {
   width: 560px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   color: #d0e1f9;
 }
 

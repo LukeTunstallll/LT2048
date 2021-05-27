@@ -3,7 +3,7 @@ resetButton = document.querySelector(".reset");
 let score = 0;
 
 //Creates fresh gameboard
-const gameGrid = [
+let gameGrid = [
   ["", "", "", ""],
   ["", "", "", ""],
   ["", "", "", ""],
@@ -21,6 +21,7 @@ const checkWin = () => {
     }
   }
 };
+
 //Check if no more moves can be made
 // const checkLose = () => {
 //   let zeros = 0;
@@ -175,12 +176,26 @@ const mergeCellsVert = () => {
   }
 };
 
-// const drawGrid = () => {};
+resetButton.addEventListener("click", (event) => {
+  initialise();
+});
 
-generate1stBoard();
-getRandomtiles();
-getRandomtiles();
-gridTranslate();
+const initialise = () => {
+  gameGrid = [
+    ["", "", "", ""],
+    ["", "", "", ""],
+    ["", "", "", ""],
+    ["", "", "", ""],
+  ];
+  score = 0;
+  scoreDisp.innerHTML = 0;
+  generate1stBoard();
+  getRandomtiles();
+  getRandomtiles();
+  gridTranslate();
+};
+
+initialise();
 
 //Assings arrow keys to controls
 const control = (event) => {
