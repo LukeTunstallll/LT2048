@@ -58,6 +58,12 @@ main {
       -ms-flex-align: center;
           align-items: center;
   color: #d0e1f9;
+  border: solid 2px #d0e1f9;
+}
+
+.reset:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .gameFooter {
@@ -177,6 +183,10 @@ main {
   width: 125px;
   background-color: #ffee93;
   font-size: 50px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cell2048 {
