@@ -196,8 +196,6 @@ const initialise = () => {
   gridTranslate();
 };
 
-initialise();
-
 //Assings arrow keys to controls
 const control = (event) => {
   if (event.keyCode === 39) {
@@ -252,3 +250,5 @@ const upPress = () => {
   gridTranslate();
   checkWin();
 };
+
+initialise();
