@@ -1,7 +1,7 @@
-$color-white: #f1f1f2;
-$color-gray: #bcbabe;
-$color-lightblue: #a1d6e2;
-$color-blue: #1995ad;
+$color-white: #d0e1f9;
+$color-lightblue: #4d648d;
+$color-blue: #283655;
+$color-gray: #1e1f26;
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
@@ -30,23 +30,38 @@ main {
   font-size: 60px;
   width: 560px;
   margin: 30px;
+  color: $color-white;
 }
 
 .score {
   text-align: center;
   font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  color: $color-white;
 }
 
 .reset {
   font-size: 30px;
-  background-color: #aaae8e;
+  background-color: $color-gray;
   border-radius: 10px;
+  align-items: center;
+  color: $color-white;
 }
 
 .gameFooter {
   width: 560px;
   text-align: center;
   font-size: 30px;
+  color: $color-white;
+}
+
+.gameHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .gameBoard {
@@ -82,7 +97,7 @@ main {
 .cell2 {
   height: 125px;
   width: 125px;
-  background-color: #e0e0e0;
+  background-color: #cbdbf1d3;
 }
 
 .cell4 {

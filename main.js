@@ -21,7 +21,7 @@ const checkWin = () => {
     }
   }
 };
-// Check if no more moves can be made
+//Check if no more moves can be made
 // const checkLose = () => {
 //   let zeros = 0;
 //   for (let o = 0; o < 4; o++) {
