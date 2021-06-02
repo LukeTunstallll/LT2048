@@ -11,7 +11,9 @@ Work Needed:
 -Don't generate random tile when no tiles are moved
 -High Score using local storage
 
-Pseudo Code
+---
+
+Pseudo Code (Written at beginning of development)
 
 basic premise is a 4x4 grid with tiles with a numerical value of powers of 2, 2 4 8 16 etc up to 2^11 and by combining them with a tile of equal value they total up with the goal being to add up 2-1024 then combining 2 blocks of 1024 to make 2048, therefore completing the game.
 
