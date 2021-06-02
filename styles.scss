@@ -7,6 +7,30 @@ $color-gray: #1e1f26;
 
 $primary-font: "Noto Sans JP", Serif;
 
+@media only screen and (min-width: 480px) {
+  main > .header {
+    text-align: center;
+    font-size: 45px;
+    width: 480px;
+  }
+
+  main > .gameBoard {
+    width: 480px;
+    height: 480px;
+    gap: 12.5px;
+  }
+
+  main .gameBoard > .cell {
+    width: 110px;
+    height: 110px;
+    font-size: 50px;
+  }
+
+  main .gameFooter {
+    width: 480px;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -23,18 +47,19 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .header {
   text-align: center;
-  font-size: 60px;
-  width: 560px;
+  font-size: 40px;
+  width: 360px;
   color: $color-white;
 }
 
 .score {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,9 +81,9 @@ main {
 }
 
 .gameFooter {
-  width: 560px;
+  width: 360px;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   color: $color-white;
 }
 
@@ -73,98 +98,69 @@ main {
   grid-template-columns: repeat(4, 1fr);
   font-size: 40px;
   text-align: center;
-  margin: 30px;
-  height: 560px;
-  width: 560px;
+  margin: 10px;
+  height: 360px;
+  width: 360px;
   background-color: $color-gray;
-  gap: 20px;
+  gap: 10px;
 }
 
 .cell {
-  height: 125px;
-  width: 125px;
+  height: 77.5px;
+  width: 77.5px;
   background-color: $color-white;
-  font-size: 80px;
-  align-items: center;
+  font-size: 40px;
   text-align: center;
-  justify-content: center;
 }
 
 .cell0 {
-  height: 125px;
-  width: 125px;
   color: $color-white;
   background-color: $color-white;
 }
 
 .cell2 {
-  height: 125px;
-  width: 125px;
   background-color: #cbdbf1d3;
 }
 
 .cell4 {
-  height: 125px;
-  width: 125px;
   background-color: #aaae8e;
 }
 
 .cell8 {
-  height: 125px;
-  width: 125px;
   background-color: #828e82;
 }
 
 .cell16 {
-  height: 125px;
-  width: 125px;
   background-color: #607b7d;
 }
 
 .cell32 {
-  height: 125px;
-  width: 125px;
   background-color: #3a606e;
 }
 
 .cell64 {
-  height: 125px;
-  width: 125px;
   background-color: #156064;
 }
 
 .cell128 {
-  height: 125px;
-  width: 125px;
   background-color: #00c49a;
-  font-size: 70px;
 }
 
 .cell256 {
-  height: 125px;
-  width: 125px;
   background-color: #79addc;
-  font-size: 70px;
 }
 
 .cell512 {
-  height: 125px;
-  width: 125px;
   background-color: #ffc09f;
-  font-size: 70px;
 }
 .cell1024 {
-  height: 125px;
-  width: 125px;
   background-color: #ffee93;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   justify-content: center;
 }
 
 .cell2048 {
-  height: 125px;
-  width: 125px;
   background-color: #f06543;
-  font-size: 50px;
+  font-size: 40px;
 }

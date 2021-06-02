@@ -1,9 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@media only screen and (min-width: 480px) {
+  main > .header {
+    text-align: center;
+    font-size: 45px;
+    width: 480px;
+  }
+
+  main > .gameBoard {
+    width: 480px;
+    height: 480px;
+    gap: 12.5px;
+  }
+
+  main .gameBoard > .cell {
+    width: 110px;
+    height: 110px;
+    font-size: 50px;
+  }
+
+  main .gameFooter {
+    width: 480px;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,40 +34,26 @@ body {
 
 main {
   font-family: "Noto Sans JP";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .header {
   text-align: center;
-  font-size: 60px;
-  width: 560px;
+  font-size: 40px;
+  width: 360px;
   color: #d0e1f9;
 }
 
 .score {
   text-align: center;
-  font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 30px;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 200px;
   color: #d0e1f9;
 }
@@ -54,145 +62,97 @@ main {
   font-size: 30px;
   background-color: #1e1f26;
   border-radius: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #d0e1f9;
   border: solid 2px #d0e1f9;
 }
 
 .reset:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .gameFooter {
-  width: 560px;
+  width: 360px;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   color: #d0e1f9;
 }
 
 .gameHead {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .gameBoard {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   font-size: 40px;
   text-align: center;
-  margin: 30px;
-  height: 560px;
-  width: 560px;
+  margin: 10px;
+  height: 360px;
+  width: 360px;
   background-color: #1e1f26;
-  gap: 20px;
+  gap: 10px;
 }
 
 .cell {
-  height: 125px;
-  width: 125px;
+  height: 77.5px;
+  width: 77.5px;
   background-color: #d0e1f9;
-  font-size: 80px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 40px;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .cell0 {
-  height: 125px;
-  width: 125px;
   color: #d0e1f9;
   background-color: #d0e1f9;
 }
 
 .cell2 {
-  height: 125px;
-  width: 125px;
   background-color: #cbdbf1d3;
 }
 
 .cell4 {
-  height: 125px;
-  width: 125px;
   background-color: #aaae8e;
 }
 
 .cell8 {
-  height: 125px;
-  width: 125px;
   background-color: #828e82;
 }
 
 .cell16 {
-  height: 125px;
-  width: 125px;
   background-color: #607b7d;
 }
 
 .cell32 {
-  height: 125px;
-  width: 125px;
   background-color: #3a606e;
 }
 
 .cell64 {
-  height: 125px;
-  width: 125px;
   background-color: #156064;
 }
 
 .cell128 {
-  height: 125px;
-  width: 125px;
   background-color: #00c49a;
-  font-size: 70px;
 }
 
 .cell256 {
-  height: 125px;
-  width: 125px;
   background-color: #79addc;
-  font-size: 70px;
 }
 
 .cell512 {
-  height: 125px;
-  width: 125px;
   background-color: #ffc09f;
-  font-size: 70px;
 }
 
 .cell1024 {
-  height: 125px;
-  width: 125px;
   background-color: #ffee93;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .cell2048 {
-  height: 125px;
-  width: 125px;
   background-color: #f06543;
-  font-size: 50px;
+  font-size: 40px;
 }
-/*# sourceMappingURL=styles.css.map */
