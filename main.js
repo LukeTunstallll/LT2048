@@ -1,3 +1,4 @@
+//Sets up buttons and score
 scoreDisp = document.querySelector("#scoreValue");
 resetButton = document.querySelector(".reset");
 let score = 0;
